@@ -1,3 +1,9 @@
+# revision 18651
+# category Package
+# catalog-ctan /fonts/philokalia
+# catalog-date 2007-09-24 10:59:32 +0200
+# catalog-license ofl
+# catalog-version 1.1
 Name:		texlive-philokalia
 Version:	1.1
 Release:	1
@@ -45,6 +51,7 @@ Philokalia books.
 #- source
 %doc %{_texmfdistdir}/source/xelatex/philokalia/philokalia.dtx
 %doc %{_texmfdistdir}/source/xelatex/philokalia/philokalia.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,3 +62,5 @@ Philokalia books.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
