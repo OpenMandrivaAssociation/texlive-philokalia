@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-philokalia
 Version:	1.1
-Release:	8
+Release:	9
 Summary:	A font to typeset the Philokalia Books
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/philokalia
