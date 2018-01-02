@@ -1,12 +1,6 @@
-# revision 18651
-# category Package
-# catalog-ctan /fonts/philokalia
-# catalog-date 2007-09-24 10:59:32 +0200
-# catalog-license ofl
-# catalog-version 1.1
 Name:		texlive-philokalia
-Version:	1.1
-Release:	10
+Version:	1.2
+Release:	1
 Summary:	A font to typeset the Philokalia Books
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/philokalia
@@ -35,13 +29,11 @@ Philokalia books.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/opentype/public/philokalia/Philokalia-Regular.otf
-%{_texmfdistdir}/tex/xelatex/philokalia/eu1plk.fd
-%{_texmfdistdir}/tex/xelatex/philokalia/philokalia.sty
-%doc %{_texmfdistdir}/doc/xelatex/philokalia/philokalia.pdf
+%{_texmfdistdir}/fonts/opentype/public/philokalia
+%{_texmfdistdir}/tex/xelatex/philokalia
+%doc %{_texmfdistdir}/doc/xelatex/philokalia
 #- source
-%doc %{_texmfdistdir}/source/xelatex/philokalia/philokalia.dtx
-%doc %{_texmfdistdir}/source/xelatex/philokalia/philokalia.ins
+%doc %{_texmfdistdir}/source/xelatex/philokalia
 
 #-----------------------------------------------------------------------
 %prep
@@ -52,17 +44,3 @@ Philokalia books.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-2
-+ Revision: 754878
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 719249
-- texlive-philokalia
-- texlive-philokalia
-- texlive-philokalia
-- texlive-philokalia
-
