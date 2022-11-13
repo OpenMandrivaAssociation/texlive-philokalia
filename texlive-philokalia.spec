@@ -1,13 +1,13 @@
 Name:		texlive-philokalia
-Version:	1.2
-Release:	3
+Version:	45356
+Release:	1
 Summary:	A font to typeset the Philokalia Books
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/philokalia
 License:	OFL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ as a project to digitize the typeface used to typeset the
 Philokalia books.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -37,7 +37,8 @@ Philokalia books.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
