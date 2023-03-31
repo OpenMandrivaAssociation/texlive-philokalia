@@ -1,6 +1,6 @@
 Name:		texlive-philokalia
 Version:	45356
-Release:	1
+Release:	2
 Summary:	A font to typeset the Philokalia Books
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/philokalia
