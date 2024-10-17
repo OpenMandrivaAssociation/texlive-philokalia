@@ -3,7 +3,7 @@ Version:	45356
 Release:	2
 Summary:	A font to typeset the Philokalia Books
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/philokalia
+URL:		https://www.ctan.org/tex-archive/fonts/philokalia
 License:	OFL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/philokalia.doc.r%{version}.tar.xz
